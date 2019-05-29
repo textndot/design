@@ -13,6 +13,7 @@ body {height: 3000px;
       cursor:pointer;
       position: fixed;
       color: black;
+      display: inline-block;
       }
 
 #hak {width: 50px;
@@ -24,6 +25,7 @@ body {height: 3000px;
       z-index: 3;
       cursor:pointer;
       position: fixed;
+      display: inline-block;
       }
 
 #yeon {width: 50px;
@@ -35,6 +37,7 @@ body {height: 3000px;
       z-index: 3;
       cursor:pointer;
       position: fixed;
+      display: inline-block;
       }
 
 #jin {width: 50px;
@@ -46,6 +49,7 @@ body {height: 3000px;
       z-index: 3;
       cursor:pointer;
       position: fixed;
+      display: inline-block;
       }
 
 #etc {width: 50px;
@@ -57,6 +61,7 @@ body {height: 3000px;
       z-index: 3;
       cursor:pointer;
       position: fixed;
+      display: inline-block;
       }
 
 a {color:white;
@@ -127,28 +132,28 @@ a:hover {text-decoration: underline;
   word-break: keep-all;
   }
 
-#dot1:hover .dot_ex, #dot2:hover .dot_ex, #dot3:hover .dot_ex, #dot4:hover .dot_ex,#dot5:hover .dot_ex,
-#dot6:hover .dot_ex, #dot7:hover .dot_ex, #dot8:hover .dot_ex, #dot9:hover .dot_ex, #dot10:hover .dot_ex,
-#dot11:hover .dot_ex, #dot12:hover .dot_ex, #dot13:hover .dot_ex, #dot14:hover .dot_ex, #dot15:hover .dot_ex,
-#dot16:hover .dot_ex, #dot17:hover .dot_ex, #dot18:hover .dot_ex, #dot19:hover .dot_ex, #dot19:hover .dot_ex,
-#dot20:hover .dot_ex, #dot38:hover .dot_ex, #dot56:hover .dot_ex,
-#dot21:hover .dot_ex, #dot39:hover .dot_ex, #dot57:hover .dot_ex,
-#dot22:hover .dot_ex, #dot40:hover .dot_ex, #dot58:hover .dot_ex,
-#dot23:hover .dot_ex, #dot41:hover .dot_ex, #dot59:hover .dot_ex,
-#dot24:hover .dot_ex, #dot42:hover .dot_ex, #dot60:hover .dot_ex,
-#dot25:hover .dot_ex, #dot43:hover .dot_ex, #dot61:hover .dot_ex,
-#dot26:hover .dot_ex, #dot44:hover .dot_ex, #dot62:hover .dot_ex,
-#dot27:hover .dot_ex, #dot45:hover .dot_ex, #dot63:hover .dot_ex,
-#dot28:hover .dot_ex, #dot46:hover .dot_ex, #dot64:hover .dot_ex,
-#dot29:hover .dot_ex, #dot47:hover .dot_ex, #dot65:hover .dot_ex,
-#dot30:hover .dot_ex, #dot48:hover .dot_ex, #dot66:hover .dot_ex,
-#dot31:hover .dot_ex, #dot49:hover .dot_ex, #dot67:hover .dot_ex,
-#dot32:hover .dot_ex, #dot50:hover .dot_ex, #dot68:hover .dot_ex,
-#dot33:hover .dot_ex, #dot51:hover .dot_ex, #dot69:hover .dot_ex,
-#dot34:hover .dot_ex, #dot52:hover .dot_ex, #dot70:hover .dot_ex,
-#dot35:hover .dot_ex, #dot53:hover .dot_ex, #dot71:hover .dot_ex,
-#dot36:hover .dot_ex, #dot54:hover .dot_ex, #dot72:hover .dot_ex,
-#dot37:hover .dot_ex, #dot55:hover .dot_ex, #dot73:hover .do3_ex{visibility: visible;
+#dot1:active .dot_ex, #dot2:active .dot_ex, #dot3:active .dot_ex, #dot4:active .dot_ex,#dot5:active .dot_ex,
+#dot6:active .dot_ex, #dot7:active .dot_ex, #dot8:active .dot_ex, #dot9:active .dot_ex, #dot10:active .dot_ex,
+#dot11:active .dot_ex, #dot12:active .dot_ex, #dot13:active .dot_ex, #dot14:active .dot_ex, #dot15:active .dot_ex,
+#dot16:active .dot_ex, #dot17:active .dot_ex, #dot18:active .dot_ex, #dot19:active .dot_ex, #dot19:active .dot_ex,
+#dot20:active .dot_ex, #dot38:active .dot_ex, #dot56:active .dot_ex,
+#dot21:active .dot_ex, #dot39:active .dot_ex, #dot57:active .dot_ex,
+#dot22:active .dot_ex, #dot40:active .dot_ex, #dot58:active .dot_ex,
+#dot23:active .dot_ex, #dot41:active .dot_ex, #dot59:active .dot_ex,
+#dot24:active .dot_ex, #dot42:active .dot_ex, #dot60:active .dot_ex,
+#dot25:active .dot_ex, #dot43:active .dot_ex, #dot61:active .dot_ex,
+#dot26:active .dot_ex, #dot44:active .dot_ex, #dot62:active .dot_ex,
+#dot27:active .dot_ex, #dot45:active .dot_ex, #dot63:active .dot_ex,
+#dot28:active .dot_ex, #dot46:active .dot_ex, #dot64:active .dot_ex,
+#dot29:active .dot_ex, #dot47:active .dot_ex, #dot65:active .dot_ex,
+#dot30:active .dot_ex, #dot48:active .dot_ex, #dot66:active .dot_ex,
+#dot31:active .dot_ex, #dot49:active .dot_ex, #dot67:active .dot_ex,
+#dot32:active .dot_ex, #dot50:active .dot_ex, #dot68:active .dot_ex,
+#dot33:active .dot_ex, #dot51:active .dot_ex, #dot69:active .dot_ex,
+#dot34:active .dot_ex, #dot52:active .dot_ex, #dot70:active .dot_ex,
+#dot35:active .dot_ex, #dot53:active .dot_ex, #dot71:active .dot_ex,
+#dot36:active .dot_ex, #dot54:active .dot_ex, #dot72:active .dot_ex,
+#dot37:active .dot_ex, #dot55:active .dot_ex, #dot73:active .do3_ex{visibility: visible;
 }
 
 #dot1 {top: 370px;}
@@ -440,12 +445,18 @@ body {width: 100%}
   padding-left: 40px;
   padding-bottom: 22px;
   font-size: 25px;
-  position: fixed;}
+  position: fixed;
+  border-bottom: 1.5px;
+  border-bottom-style: solid;
+  border-color: black;
+  z-index: 3;
+  font-weight: 500;}
 
 
 .years {
   padding-left: 25px;
-  font-size: 20px;}
+  font-size: 23px;
+font-weight: 400;}
 
 .dot {  height: 40px;
   width: 40px;}
@@ -463,41 +474,56 @@ body {width: 100%}
   width: 100%;
   padding-bottom: 14px;
   padding-left: 36px;
+  border-bottom: 1.5px;
+  border-bottom-style: solid;
+  border-color: black;
+  font-weight: 500;
+
 }
 
-#hyup {width: 70px;
-      padding-bottom: 14px;
+#hyup {width: 40px;
+      padding-top: 0px;
+      margin-top: 17px;
       top: 108px;
       left: 400px;
       font-size: 19px;
+      font-weight: 500;
       }
 
-#hak {width: 70px;
-      padding-top: 17px;
+#hak {width: 40px;
+      padding-top: 0px;
+      margin-top: 17px;
       top: 108px;
       left: 470px;
       font-size: 19px;
+      font-weight: 500;
       }
 
-#yeon {width: 70px;
-      padding-top: 17px;
+#yeon {width: 60px;
+      padding-top: 0px;
+      margin-top: 17px;
       top: 108px;
       left: 540px;
       font-size: 19px;
+      font-weight: 500;
       }
 
-#jin {width: 70px;
-      padding-top: 17px;
+#jin {width: 60px;
+      padding-top: 0px;
+      margin-top: 17px;
       top: 108px;
       left: 620px;
       font-size: 19px;
+      font-weight: 500;
       }
 
-#etc {width: 70px;
-      padding-top: 17px;
+#etc {width: 40px;
+      padding-top: 0px;
+      margin-top: 17px;
       top: 108px;
       left: 700px;
       font-size: 19px;
+      font-weight: 500;
       }
 
       .dot_ex
@@ -508,4 +534,32 @@ body {width: 100%}
         z-index: 3;
         }
 
+        .dot_hak:hover, .dot_hyup:hover, .dot_etc:hover, .dot_yeon:hover, .dot_jin:hover,
+        .dot_hak:active, .dot_hyup:active, .dot_etc:active, .dot_yeon:active, .dot_jin:active {transform: scale(1.5);
+          transition: 0.2;
+      }
+
+      #dot1:hover .dot_ex, #dot2:hover .dot_ex, #dot3:hover .dot_ex, #dot4:hover .dot_ex,#dot5:hover .dot_ex,
+      #dot6:hover .dot_ex, #dot7:hover .dot_ex, #dot8:hover .dot_ex, #dot9:hover .dot_ex, #dot10:hover .dot_ex,
+      #dot11:hover .dot_ex, #dot12:hover .dot_ex, #dot13:hover .dot_ex, #dot14:hover .dot_ex, #dot15:hover .dot_ex,
+      #dot16:hover .dot_ex, #dot17:hover .dot_ex, #dot18:hover .dot_ex, #dot19:hover .dot_ex, #dot19:hover .dot_ex,
+      #dot20:hover .dot_ex, #dot38:hover .dot_ex, #dot56:hover .dot_ex,
+      #dot21:hover .dot_ex, #dot39:hover .dot_ex, #dot57:hover .dot_ex,
+      #dot22:hover .dot_ex, #dot40:hover .dot_ex, #dot58:hover .dot_ex,
+      #dot23:hover .dot_ex, #dot41:hover .dot_ex, #dot59:hover .dot_ex,
+      #dot24:hover .dot_ex, #dot42:hover .dot_ex, #dot60:hover .dot_ex,
+      #dot25:hover .dot_ex, #dot43:hover .dot_ex, #dot61:hover .dot_ex,
+      #dot26:hover .dot_ex, #dot44:hover .dot_ex, #dot62:hover .dot_ex,
+      #dot27:hover .dot_ex, #dot45:hover .dot_ex, #dot63:hover .dot_ex,
+      #dot28:hover .dot_ex, #dot46:hover .dot_ex, #dot64:hover .dot_ex,
+      #dot29:hover .dot_ex, #dot47:hover .dot_ex, #dot65:hover .dot_ex,
+      #dot30:hover .dot_ex, #dot48:hover .dot_ex, #dot66:hover .dot_ex,
+      #dot31:hover .dot_ex, #dot49:hover .dot_ex, #dot67:hover .dot_ex,
+      #dot32:hover .dot_ex, #dot50:hover .dot_ex, #dot68:hover .dot_ex,
+      #dot33:hover .dot_ex, #dot51:hover .dot_ex, #dot69:hover .dot_ex,
+      #dot34:hover .dot_ex, #dot52:hover .dot_ex, #dot70:hover .dot_ex,
+      #dot35:hover .dot_ex, #dot53:hover .dot_ex, #dot71:hover .dot_ex,
+      #dot36:hover .dot_ex, #dot54:hover .dot_ex, #dot72:hover .dot_ex,
+      #dot37:hover .dot_ex, #dot55:hover .dot_ex, #dot73:hover .do3_ex{visibility: visible;
+      }
 }
