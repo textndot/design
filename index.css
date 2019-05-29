@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900');
+html {scroll-behavior: smooth;}
+body {height: 3000px;
+      font-family: 'Noto Sans KR';}
+
+#hyup {width: 50px;
+      padding-top: 17px;
+      top: 105.5px;
+      left: 390px;
+      position: absolute;
+      font-size: 16px;
+      z-index: 3;
+      cursor:pointer;
+      position: fixed;
+      color: black;
+      }
+
+#hak {width: 50px;
+      padding-top: 17px;
+      top: 105.5px;
+      left: 450px;
+      position: absolute;
+      font-size: 16px;
+      z-index: 3;
+      cursor:pointer;
+      position: fixed;
+      }
+
+#yeon {width: 50px;
+      padding-top: 17px;
+      top: 105.5px;
+      left: 510px;
+      position: absolute;
+      font-size: 16px;
+      z-index: 3;
+      cursor:pointer;
+      position: fixed;
+      }
+
+#jin {width: 50px;
+      padding-top: 17px;
+      top: 105.5px;
+      left: 580px;
+      position: absolute;
+      font-size: 16px;
+      z-index: 3;
+      cursor:pointer;
+      position: fixed;
+      }
+
+#etc {width: 50px;
+      padding-top: 17px;
+      top: 105.5px;
+      left: 650px;
+      position: absolute;
+      font-size: 16px;
+      z-index: 3;
+      cursor:pointer;
+      position: fixed;
+      }
+
+a {color:white;
+    text-decoration: none;}
+
+a:hover {text-decoration: underline;
+        text-decoration-color: #00FF0A;}
+
+.title_of_page {
+  z-index: 3;
+  font-family: 'Noto Sans KR';
+  display: block;
+  width: 100%;
+  height: 59px;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  padding-left: 56px;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: -18px;
+  left: -5px;
+  border-bottom: 0.5px;
+  border-bottom-style: solid;
+}
+
+
+.dot_hak, .dot_hyup, .dot_etc, .dot_yeon, .dot_jin {
+  z-index: 0;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 156px;
+  transition: 0.3s;
+  background-color: black;
+}
+
+.dot:hover, .dot_hak:hover, .dot_hyup:hover, .dot_etc:hover, .dot_yeon:hover, .dot_jin:hover {transform: scale(1.1);
+  transition: 0.2;
+  box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.5);}
+
+.dot_ex
+ {
+  width: 140px;
+  top:100px;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  line-height: 1.5;
+  padding: 5px 0;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  top:-20px;
+  left:20px;
+  font-size: 8.5px;
+  z-index: 3;
+  word-break: keep-all;
+  }
+
+#dot1:hover .dot_ex, #dot2:hover .dot_ex, #dot3:hover .dot_ex, #dot4:hover .dot_ex,#dot5:hover .dot_ex,
+#dot6:hover .dot_ex, #dot7:hover .dot_ex, #dot8:hover .dot_ex, #dot9:hover .dot_ex, #dot10:hover .dot_ex,
+#dot11:hover .dot_ex, #dot12:hover .dot_ex, #dot13:hover .dot_ex, #dot14:hover .dot_ex, #dot15:hover .dot_ex,
+#dot16:hover .dot_ex, #dot17:hover .dot_ex, #dot18:hover .dot_ex, #dot19:hover .dot_ex, #dot19:hover .dot_ex,
+#dot20:hover .dot_ex, #dot38:hover .dot_ex, #dot56:hover .dot_ex,
+#dot21:hover .dot_ex, #dot39:hover .dot_ex, #dot57:hover .dot_ex,
+#dot22:hover .dot_ex, #dot40:hover .dot_ex, #dot58:hover .dot_ex,
+#dot23:hover .dot_ex, #dot41:hover .dot_ex, #dot59:hover .dot_ex,
+#dot24:hover .dot_ex, #dot42:hover .dot_ex, #dot60:hover .dot_ex,
+#dot25:hover .dot_ex, #dot43:hover .dot_ex, #dot61:hover .dot_ex,
+#dot26:hover .dot_ex, #dot44:hover .dot_ex, #dot62:hover .dot_ex,
+#dot27:hover .dot_ex, #dot45:hover .dot_ex, #dot63:hover .dot_ex,
+#dot28:hover .dot_ex, #dot46:hover .dot_ex, #dot64:hover .dot_ex,
+#dot29:hover .dot_ex, #dot47:hover .dot_ex, #dot65:hover .dot_ex,
+#dot30:hover .dot_ex, #dot48:hover .dot_ex, #dot66:hover .dot_ex,
+#dot31:hover .dot_ex, #dot49:hover .dot_ex, #dot67:hover .dot_ex,
+#dot32:hover .dot_ex, #dot50:hover .dot_ex, #dot68:hover .dot_ex,
+#dot33:hover .dot_ex, #dot51:hover .dot_ex, #dot69:hover .dot_ex,
+#dot34:hover .dot_ex, #dot52:hover .dot_ex, #dot70:hover .dot_ex,
+#dot35:hover .dot_ex, #dot53:hover .dot_ex, #dot71:hover .dot_ex,
+#dot36:hover .dot_ex, #dot54:hover .dot_ex, #dot72:hover .dot_ex,
+#dot37:hover .dot_ex, #dot55:hover .dot_ex, #dot73:hover .do3_ex{visibility: visible;
+}
+
+#dot1 {top: 370px;}
+#dot2 {top: 430px;}
+#dot3 {top: 430px; left: 216px;}
+#dot4 {top: 490px;}
+#dot5 {top: 490px; left: 216px;}
+#dot6 {top: 610px;}
+#dot7 {top: 670px;}
+#dot8 {top: 670px;left: 216px;}
+#dot9 {top: 670px; left: 276px;}
+#dot10 {top: 670px; left: 336px;}
+
+/*2009*/
+
+#dot11 {top: 790px;}
+#dot12 {top: 790px; left: 216px;}
+#dot13 {top: 790px; left: 276px;}
+#dot14 {top: 790px; left: 336px;}
+#dot15 {top: 790px; left: 396px;}
+
+/*2008*/
+
+#dot16 {top: 850px;}
+#dot17 {top: 850px; left: 216px;}
+#dot18 {top: 850px; left: 276px;}
+#dot19 {top: 850px; left: 336px;}
+#dot20 {top: 850px; left: 396px;}
+#dot21 {top: 850px; left: 456px;}
+#dot22 {top: 850px; left: 516px;}
+#dot23 {top: 850px; left: 576px;}
+#dot24 {top: 850px; left: 636px;}
+#dot25 {top: 850px; left: 696px;}
+#dot26 {top: 850px; left: 756px;}
+
+/*2007*/
+
+#dot27 {top: 910px; }
+#dot28 {top: 910px; left: 216px;}
+#dot29 {top: 910px; left: 276px;}
+
+/*2006*/
+
+#dot30 {top: 970px; }
+#dot31 {top: 970px; left: 216px;}
+
+/*2005*/
+
+#dot32 {top: 1030px; }
+#dot33 {top: 1030px; left: 216px;}
+
+/*2004*/
+
+#dot34 {top: 1090px; }
+#dot35 {top: 1090px; left: 216px;}
+
+/*2003*/
+
+#dot36 {top: 1150px; }
+#dot37 {top: 1150px; left: 216px;}
+#dot38 {top: 1150px; left: 276px;}
+
+/*2002*/
+
+#dot39 {top: 1210px; }
+#dot40 {top: 1210px; left: 216px;}
+#dot41 {top: 1210px; left: 276px;}
+#dot42 {top: 1210px; left: 336px;}
+#dot43 {top: 1210px; left: 396px;}
+
+/*2001*/
+
+#dot44 {top: 1270px; }
+#dot45 {top: 1270px; left: 216px;}
+
+/*2000*/
+
+#dot46 {top: 1330px; }
+
+/*1997*/
+
+#dot47 {top: 1510px; }
+#dot48 {top: 1510px; left: 216px;}
+
+/*1996*/
+
+#dot49 {top: 1570px; }
+
+/*1995*/
+
+#dot50 {top: 1630px; }
+#dot51 {top: 1630px; left: 216px;}
+#dot52 {top: 1630px; left: 276px;}
+#dot53 {top: 1630px; left: 336px;}
+
+/*1994*/
+
+#dot54 {top: 1690px; }
+#dot55 {top: 1690px; left: 216px;}
+
+/*1993*/
+
+#dot56 {top: 1750px; }
+
+/*1992*/
+
+#dot57 {top: 1810px; }
+#dot58 {top: 1810px; left: 216px;}
+#dot59 {top: 1810px; left: 276px;}
+
+/*1988*/
+
+#dot60 {top: 2050px; }
+
+/*1983*/
+
+#dot61 {top: 2350px; }
+#dot62 {top: 2350px; left: 216px;}
+
+/*1981*/
+
+#dot63 {top: 2470px; }
+
+/*1978*/
+
+#dot64 {top: 2650px; }
+#dot65 {top: 2650px; left: 216px;}
+
+/*1977*/
+
+#dot66 {top: 2710px; }
+
+/*1972*/
+
+#dot67 {top: 3010px; }
+#dot68 {top: 3010px; left: 216px;}
+
+/*1970*/
+
+#dot69 {top: 3130px; }
+
+/*1969*/
+
+#dot70 {top: 3190px; }
+
+/*1945*/
+
+#dot71 {top: 4630px; }
+
+.years  {
+  font-family: 'Noto Sans KR';
+  width: 40px;
+  height: 24px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  display: inline-block;
+  position: absolute;
+  padding-left: 56px;
+  padding-bottom: 100px;
+}
+
+.years_box2 {
+  width: 70px;
+  padding-top: 17px;
+  height: 24px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  display: inline-block;
+  position: absolute;
+  padding-left: 56px;
+}
+
+#whenyear
+{top: 105.5px;
+left: -5px;
+font-size: 17px;
+position: fixed;
+width: 100%;
+padding-bottom: 14px;
+background-color: rgba(255, 255, 255, 0.7);
+border-bottom: 0.5px;
+border-bottom-style: solid;
+
+}
+
+.backbox_2
+{ display: inline-block;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+
+}
+
+#year2019 {top: 200px;}
+#year2018 {top: 260px;}
+#year2017 {top: 320px;}
+#year2016 {top: 380px;}
+#year2015 {top: 440px;}
+#year2014 {top: 500px;}
+#year2013 {top: 560px;}
+#year2012 {top: 620px;}
+#year2011 {top: 680px;}
+#year2010 {top: 740px;}
+#year2009 {top: 800px;}
+#year2008 {top: 860px;}
+#year2007 {top: 920px;}
+#year2006 {top: 980px;}
+#year2005 {top: 1040px;}
+#year2004 {top: 1100px;}
+#year2003 {top: 1160px;}
+#year2002 {top: 1220px;}
+#year2001 {top: 1280px;}
+#year2000 {top: 1340px;}
+#year1999 {top: 1400px;}
+#year1998 {top: 1460px;}
+#year1997 {top: 1520px;}
+#year1996 {top: 1580px;}
+#year1995 {top: 1640px;}
+#year1994 {top: 1700px;}
+#year1993 {top: 1760px;}
+#year1992 {top: 1820px;}
+#year1991 {top: 1880px;}
+#year1990 {top: 1940px;}
+#year1989 {top: 2000px;}
+#year1988 {top: 2060px;}
+#year1987 {top: 2120px;}
+#year1986 {top: 2180px;}
+#year1985 {top: 2240px;}
+#year1984 {top: 2300px;}
+#year1983 {top: 2360px;}
+#year1982 {top: 2420px;}
+#year1981 {top: 2480px;}
+#year1980 {top: 2540px;}
+#year1979 {top: 2600px;}
+#year1978 {top: 2660px;}
+#year1977 {top: 2720px;}
+#year1976 {top: 2780px;}
+#year1975 {top: 2840px;}
+#year1974 {top: 2900px;}
+#year1973 {top: 2960px;}
+#year1972 {top: 3020px;}
+#year1971 {top: 3080px;}
+#year1970 {top: 3140px;}
+#year1969 {top: 3200px;}
+#year1968 {top: 3260px;}
+#year1967 {top: 3320px;}
+#year1966 {top: 3380px;}
+#year1965 {top: 3440px;}
+#year1964 {top: 3500px;}
+#year1963 {top: 3560px;}
+#year1962 {top: 3620px;}
+#year1961 {top: 3680px;}
+#year1960 {top: 3740px;}
+#year1959 {top: 3800px;}
+#year1958 {top: 3860px;}
+#year1957 {top: 3920px;}
+#year1956 {top: 3980px;}
+#year1955 {top: 4040px;}
+#year1954 {top: 4100px;}
+#year1953 {top: 4160px;}
+#year1952 {top: 4220px;}
+#year1951 {top: 4280px;}
+#year1950 {top: 4340px;}
+#year1949 {top: 4400px;}
+#year1948 {top: 4460px;}
+#year1947 {top: 4520px;}
+#year1946 {top: 4580px;}
+#year1945 {top: 4640px;}
+
+@media (max-width:500px) {
+
+body {width: 100%}
+
+.title_of_page {
+  top:-5px;
+  padding-top: 35px;
+  padding-left: 40px;
+  padding-bottom: 22px;
+  font-size: 25px;
+  position: fixed;}
+
+
+.years {
+  padding-left: 25px;
+  font-size: 20px;}
+
+.dot {  height: 40px;
+  width: 40px;}
+
+  #dots{
+    top: 5px;
+    position: absolute;
+    left: -40px;
+  }
+
+  #whenyear
+  {top: 110px;
+  font-size: 19px;
+  position: fixed;
+  width: 100%;
+  padding-bottom: 14px;
+  padding-left: 36px;
+}
+
+#hyup {width: 70px;
+      padding-bottom: 14px;
+      top: 108px;
+      left: 400px;
+      font-size: 19px;
+      }
+
+#hak {width: 70px;
+      padding-top: 17px;
+      top: 108px;
+      left: 470px;
+      font-size: 19px;
+      }
+
+#yeon {width: 70px;
+      padding-top: 17px;
+      top: 108px;
+      left: 540px;
+      font-size: 19px;
+      }
+
+#jin {width: 70px;
+      padding-top: 17px;
+      top: 108px;
+      left: 620px;
+      font-size: 19px;
+      }
+
+#etc {width: 70px;
+      padding-top: 17px;
+      top: 108px;
+      left: 700px;
+      font-size: 19px;
+      }
+
+}
