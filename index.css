@@ -500,4 +500,12 @@ body {width: 100%}
       font-size: 19px;
       }
 
+      .dot_ex
+       {
+        width: 240px;
+        top:-40px;
+        font-size: 18px;
+        z-index: 3;
+        }
+
 }
